@@ -9,11 +9,11 @@ from aws_cdk import core as cdk
 # being updated to use `cdk`.  You may delete this import if you don't need it.
 from aws_cdk import core
 
-from hello_cdk.hello_cdk_stack import HelloCdkStack
+from resume_website_cdk.resume_website_cdk_stack import ResumeWebsiteCdkStack
 
 
 app = core.App()
-HelloCdkStack(app, "HelloCdkStack",
+ResumeWebsiteCdkStack(app, "ResumeWebsiteCdkStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
@@ -26,7 +26,7 @@ HelloCdkStack(app, "HelloCdkStack",
     # Uncomment the next line if you know exactly what Account and Region you
     # want to deploy the stack to. */
 
-    #env=core.Environment(account='123456789012', region='us-east-1'),
+    env=core.Environment(account='850665276715', region='us-east-1'),
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
